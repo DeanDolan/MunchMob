@@ -1,0 +1,99 @@
+
+{
+    "chinese":{
+      
+      "type": "chinese",
+      "menu": {
+        "main dishes": [
+          ["Satay", 10],
+          ["Curry", 10]
+        ],
+        "meat options": [
+          ["Vegetarian",0], 
+          ["Chicken",0], 
+          ["Beef",0]
+        ],
+        "side dishes": [
+          ["Rice", 2],
+          ["Chips", 2.5],
+          ["Noodles", 3]
+        ]
+      },
+      "detail": {
+        "distance": "3km",
+        "location": "raheny",
+        "delivery": 3
+      }
+    },
+    "chipper": {
+     
+      "type": "chipper",
+      "menu": [
+        ["burger", 5],
+        ["fish and chips", 7.5],
+        ["wrap", 4],
+        ["chicken nuggets", 4],
+        ["hotdog", 3]
+      ],
+      "details": {
+        "distance": "5km",
+        "location": "ballymun",
+        "delivery": 2.5
+      }
+    },
+    "pizza": {
+     
+      "type": "pizza",
+      "menu": [
+        ["pepperoni", 10],
+        ["margarita", 10],
+        ["ham", 10],
+        ["hawaiian", 10],
+        ["veggie", 10]
+      ],
+      "details": {
+        "distance": "4km",
+        "location": "coolock",
+        "delivery": 3
+      }
+    },
+    "mexican": {
+      
+      "type": "Mexican",
+      "menu": {
+      "Main dish": [["chimichanga", 10], 
+                      ["tacos", 9], 
+                      ["burritos", 10], 
+                      ["nachos", 8], 
+                      ["fajitas", 11]],
+
+       "Meat options": [["chicken",4], 
+                        ["beef",4],
+                        [ "pork", 3],
+                        ["vegetarian",0]]
+      },
+      "details": {
+        "distance": "6km",
+        "location": "clontarf",
+        "delivery": 4
+      }
+    },
+    "japanese": {
+      
+      "type": "Japanese",
+      "menu": {
+      "Main dish": [["nigiri", 8],
+                      ["uramaki", 8],
+                      ["maki", 8]],
+            
+          "Fish options": [["salmon",4],
+                           ["tuna",3]]
+       },
+        "details": {
+        "distance": "8km",
+        "location": "Blanchardstown",
+        "delivery": 5
+        }
+     }     
+  }     
+   

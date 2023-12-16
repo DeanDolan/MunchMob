@@ -1,0 +1,33 @@
+{
+  "morechinese": {
+    "minOrderAmount": 10,
+    "deliveryCharge": 3,
+    "review": 98,
+    "stars": 4.8
+  },
+  "morechipper": {
+    "minOrderAmount": 5,
+    "deliveryCharge": 2.5,
+    "review": 76,
+    "stars": 4.3
+  },
+  "morejapanese": {
+    "minOrderAmount": 10,
+    "deliveryCharge": 3.5,
+    "review": 67,
+    "stars": 3.8
+  },
+  "morepizza": {
+    "minOrderAmount": 10,
+    "deliveryCharge": 3,
+    "review": 105,
+    "stars": 4.5
+  },
+  "moremexican": {
+    "minOrderAmount": 5,
+    "deliveryCharge": 4,
+    "review": 55,
+    "stars": 4.1
+  }
+}
+

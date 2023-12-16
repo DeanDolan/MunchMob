@@ -1,0 +1,332 @@
+/* OUR GROUP ID IS 163, MEMBERS ARE DEAN DOLAN, CONOR GRIFFIN, CODY AREMU AND OUEDRAOGO MORRIS */
+
+/* 
+    Created on : 28 Nov 2023, 10:14:19
+    Author     : morrisono
+*/
+
+ 
+/*.topnav{
+    background-color: #FFA500;
+    overflow: hidden;
+}
+
+.topnav a{
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+} */
+
+button{
+   margin-top: 10px;
+   padding: 10px 10px;
+   background-color: #FFA500;
+   color: #fff;
+   border: none;
+   cursor: pointer;
+   display: block;
+   margin: 0 auto;
+   width: 200px; 
+}
+
+h1, h2{
+  margin-top: 20px;
+  font-family: Kenia;
+}
+
+.topnav a:hover{
+    background-color: #ddd;
+    color: black;
+}
+
+body{
+ font-family: Kenia;
+ text-align: center;
+ background-color: #f0f0f0;
+ background-image: url("./images/wallone.jpeg");
+ margin: 0;
+ padding: 0px;
+}
+
+
+.Apollo{
+ text-align: center;
+}
+
+footer{
+ background-color: #FFA500;
+ padding: 5px;
+ text-align: center;
+ margin-top: auto;
+
+}
+
+.subscribe form {
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.input-group {
+display: flex;
+align-items: center;
+}
+
+.input-group input[type="email"] {
+margin-right: 10px; 
+padding: 10px;
+width: 300px; 
+border: 1px;
+}
+
+.input-group button {
+padding: 10px 15px; 
+background-color: #FFFFFF;
+color: #FFA500;
+border: 1px;
+cursor: pointer;
+
+}
+
+.subscribe h3{
+color: #FFFFFF;
+         
+}
+
+.top{
+    background-color: #bf0426;
+    overflow: hidden;
+}
+
+.top a{
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.savor{
+ text-align: center;
+}
+
+
+.sub form {
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+
+.input-g {
+display: flex;
+align-items: center;
+}
+
+.input-g input[type="email"] {
+margin-right: 10px; 
+padding: 10px;
+width: 300px;
+border: 1px;
+}
+
+
+.cbutton{
+   padding: 10px 15px; 
+   background-color: #000000;
+   color: #bf0426;
+   border: 1px;
+   cursor: pointer;
+   width: 150px; 
+}
+
+.cbut{
+   margin-top: 10px;
+   padding: 10px 10px;
+   background-color: #bf0426;
+   color: #000000;
+   border: 1px;
+   cursor: pointer;
+   display: block;
+   margin: 0 auto;
+   width: 200px; 
+}
+
+.ss{
+ background-color: #bf0426;
+ padding: 5px;
+ text-align: center;
+
+}
+
+.sub h3{
+color: #000000;
+         
+}
+
+.jbody{
+ font-family: Kenia;
+ text-align: center;
+ color:#FFFFFF;
+ background-color: #f0f0f0;
+ background-image: url("./images/backs.jpeg");
+ background-repeat: no-repeat;
+ background-size: cover;
+}
+
+
+#output {
+border: 1px solid #000000;  /* Add border */
+background-color: #FFA500;
+padding: 5px;
+margin-top: 10px;
+border-radius: 7px;
+background-size: 50%;
+}
+
+#output h2 {
+color: #FFFFFF;
+font-family: Kenia;
+justify-content: left;
+}
+
+/* Style for menu categories */
+#output h3,h4 {
+color: #FFFFFF;
+font-family: Kenia;
+justify-content: left;
+}
+
+/* Style for menu items */
+#output p {
+margin: 5px;
+color: #FFFFFF;
+}
+/* Style for menu items */
+#output .menu-item {
+align-items: center;
+}
+
+#output .menu-item img {
+width: 30px; 
+margin-right: 10px; 
+align-items: center;
+}
+
+
+
+#show {
+    border: 1px solid #000000;  /* Add border */
+    background-color: #bf0426;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 10px;
+    }
+    
+    #show h2 {
+    color: #FFFFFF;
+    font-family: Kenia;
+    }
+    
+    /* Style for menu categories */
+    #show h3,h4 {
+    color: #FFFFFF;
+    font-family: Kenia;
+    }
+    
+    /* Style for menu items */
+    #show p {
+    margin: 5px 0;
+    color: #FFFFFF;
+    }
+    /* Style for menu items */
+    #show .menu-item {
+    justify-content: left;
+    }
+    
+    #show .menu-item img {
+    width: 40px; 
+    margin-right: 10px; /* Adjust the spacing as needed */
+    align-items: center;
+    }
+	
+	/* Deans navbar and foter */
+	
+	/* Styling for the top and footer navigation bars */
+.topnav{
+  overflow: hidden; /* Hides content that overflows its box */
+  background-color: #FFA500; 
+}
+
+.top{
+  overflow: hidden; /* Hides content that overflows its box */
+  background-color: #bf0426; 
+}
+
+/* Styling for links within the navigation bars */
+.topnav a, .top a{
+  float: left; /* Floats elements to the left */
+  display: block; /* Sets elements as block-level elements */
+  color: black; /* Sets text color to black */
+  text-align: center; /* Centers text */
+  padding: 14px 16px; /* Sets padding for top and bottom to 14px, and left and right to 16px */
+  text-decoration: none; /* Removes default text decoration */
+  font-size: 17px; /* Sets font size to 17px */
+}
+
+/* Styling for elements with class 'nav-link' within '.topnav' */
+.topnav .nav-link, .top .nav-link {
+    background-color: black; /* Sets background color to black */
+    color: white; /* Sets text color to white */
+}
+
+/* Change the color of links on hover for anchors with class 'homeNav' in '.topnav' */
+.topnav a.homeNav:hover, .top a.homeNav:hover {
+  background-color: black; /* Changes background color to black on hover */
+  color: white; /* Changes text color to white on hover */
+  margin: auto; /* Centers the margin */
+}
+
+/* Style the active element for anchors with class 'homeNav' in '.topnav' */
+.topnav a.homeNav {
+  background-color: #FFA500;
+  color: white; /* Sets text color to white */
+}
+
+.top a.homeNav {
+  background-color: #bf0426;
+  color: white; /* Sets text color to white */
+}
+
+/* Style the search box (input type text) inside the navigation bar */
+.topnav input[type=text], .top input[type=text] {
+  float: right; /* Floats the input to the right */
+  padding: 6px; /* Adds padding around the input */
+  border: none; /* Removes the border */
+  margin-top: 8px; /* Sets top margin */
+  margin-right: 16px; /* Sets right margin */
+  font-size: 17px; /* Sets font size to 17px */
+}
+
+/* Styling for elements with class 'homeNav' */
+.homeNav {
+  border-right: 1px solid white; /* Adds a right border of 1px solid white */
+  padding-right: 10px; /* Adds right padding of 10px */
+}
+
+/* Removes the right border on the last anchor tag with class 'homeNav' */
+.homeNav:last-child {
+  border-right: none; /* Removes the right border */
+}
+
+#myList{
+	display: none;
+}
+
+.japfooter{
+	background-color: #bf0426;
+}

@@ -1,0 +1,183 @@
+/*
+*author@Cody.Aremu
+*pizza.html and chipper.html  ALL DONE BY Cody Aremu
+*14/12/2023
+*/
+
+/* pizza.html styling here */
+
+#myList{
+	display: none;
+}
+  
+  /* Style the links inside the navigation bar */
+  a {
+    float: left;
+    color: BLACK;
+    padding: 20px;
+  }
+  
+  .heading{
+    color:#fee7b3;
+    text-align: center;
+  }
+  
+  body{
+  background-image: url("./images/piza.png");
+  }
+  
+  #output { 
+    background-color: #bc4736;
+    padding: 10px;
+    margin-top: 100px;
+    margin-left: 25%;
+    border-radius: 10px;
+    width: 50%;
+  }
+  
+  
+  /* Style for the restaurant type heading */
+  h2, h3 {
+    color: #f8a043;
+    text-align: center;
+  }
+  
+  /* Style for menu items */
+  p {
+    margin: 5px 0;
+    color: #fee7b3;
+  }
+  
+  /* Style for menu items */
+  .menu-item {
+    display: flex;
+    align-items: center;
+  }
+  
+  .menu-item img {
+    width: 50px; /* Adjust the size as needed */
+    margin-right: 10px; /* Adjust the spacing as needed */
+  }
+  
+  button{
+    position: absolute;
+    left: 48.5%;
+    top: 30%;
+  }
+  
+  
+ul {
+  list-style-type: none; /* Removes default bullet points from lists */
+  margin: 0; /* Resets margin */
+  padding: 0; /* Resets padding */
+  float: left; /* Floats the element to the left */
+  padding-left: 900px; /* Adds left padding of 900px */
+  color: white; /* Sets text color to white */
+}
+
+ul.a {
+  text-decoration: none; /* Removes text decoration from elements with class 'a' inside 'ul' */
+}
+
+li {
+  display: inline; /* Displays list items inline */
+}
+
+/* Additional styling specifically for input elements of type 'text' within '.topnav' */
+  .topnav input[type=text] {
+    border: 1px solid #ccc; /* Sets a border with a color */
+  }
+}
+
+.socialsContainer{
+	position: absolute;
+	display: flex; /* Uses flexbox for layout */
+	color: white; /* Sets text color to white */
+	gap: 20px; /* Sets gap between flex items */
+	padding-left: 550px; /* Adds left padding */
+	background-color: #bc4736; 
+	margin-top: 5px; /* Sets top margin */
+} 
+
+#socials{
+	color: white; /* Sets text color to white */
+	font-size: 20px; /* Sets font size to 20px */
+	padding-left: 500px; /* Adds left padding */
+	background-color: #bc4736;
+}
+
+footer{
+	background-color: #bc4736;
+	padding-bottom: 10px; /* Adds bottom padding */
+	padding-top: 1px; /* Adds top padding */
+	margin-top: 100px; /* Sets top margin */
+}
+
+.footer-content {
+    display: flex; /* Uses flexbox for layout */
+    flex-direction: column; /* Sets flex direction to column */
+    align-items: center; /* Centers items horizontally */
+    justify-content: center; /* Centers items vertically */
+}
+
+.rights {
+    text-align: center; /* Aligns text in the center */
+    margin-top: 20px; /* Sets top margin */
+}
+
+/* Styling for the top and footer navigation bars */
+.topnav, .footernav {
+  overflow: hidden; /* Hides content that overflows its box */
+  background-color: #bc4736;
+}
+
+/* Styling for links within the navigation bars */
+.topnav a {
+  float: left; /* Floats elements to the left */
+  display: block; /* Sets elements as block-level elements */
+  color: black; /* Sets text color to black */
+  text-align: center; /* Centers text */
+  padding: 14px 16px; /* Sets padding for top and bottom to 14px, and left and right to 16px */
+  text-decoration: none; /* Removes default text decoration */
+  font-size: 17px; /* Sets font size to 17px */
+}
+
+/* Styling for elements with class 'nav-link' within '.topnav' */
+.topnav .nav-link {
+    background-color: black; /* Sets background color to black */
+    color: white; /* Sets text color to white */
+}
+
+/* Change the color of links on hover for anchors with class 'homeNav' in '.topnav' */
+.topnav a.homeNav:hover {
+  background-color: black; /* Changes background color to black on hover */
+  color: white; /* Changes text color to white on hover */
+  margin: auto; /* Centers the margin */
+}
+
+/* Style the active element for anchors with class 'homeNav' in '.topnav' */
+.topnav a.homeNav {
+ background-color: #bc4736;
+  color: white; /* Sets text color to white */
+}
+
+/* Style the search box (input type text) inside the navigation bar */
+.topnav input[type=text] {
+  float: right; /* Floats the input to the right */
+  padding: 6px; /* Adds padding around the input */
+  border: none; /* Removes the border */
+  margin-top: 8px; /* Sets top margin */
+  margin-right: 16px; /* Sets right margin */
+  font-size: 17px; /* Sets font size to 17px */
+}
+
+/* Styling for elements with class 'homeNav' */
+.homeNav {
+  border-right: 1px solid white; /* Adds a right border of 1px solid white */
+  padding-right: 10px; /* Adds right padding of 10px */
+}
+
+/* Removes the right border on the last anchor tag with class 'homeNav' */
+.homeNav:last-child {
+  border-right: none; /* Removes the right border */
+}

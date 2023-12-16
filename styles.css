@@ -1,0 +1,541 @@
+/* OUR GROUP ID IS 163, MEMBERS ARE DEAN DOLAN, CONOR GRIFFIN, CODY AREMU AND OUEDRAOGO MORRIS */
+
+/* This styles sheet styles both Dean and Conor's html pages. It is clearly commented who did what below */
+
+/*
+*author@Dean.Dolan
+*index.html + form.html + moredetails.json + index.js ALL DONE BY DEAN DOLAN
+*29/11/2023
+*/
+
+/* *index.html + form.html styling (nav, footer etc that is the same across all pages made by Dean Dolan) */
+
+#logo {
+	margin-left: 40%; /* Positions the logo 40% from the left */
+}
+
+#myList{
+	display: none;
+}
+
+.homeBody, .formBody {
+	background-image: url("./images/fastfood-min.jpg"); /* Sets background image */
+	background-position: fixed; /* Fixes the background position */
+}
+
+#homeheading {
+	color: white; /* Sets text color to white */
+	padding-left: 500px; /* Adds left padding of 500px */
+}
+
+#homeOptions {
+	color: white; /* Sets text color to white */
+	padding-left: 370px; /* Adds left padding of 370px */
+}
+
+#formheading {
+	color: white; /* Sets text color to white */
+	padding-left: 400px; /* Adds left padding of 400px */
+}
+
+.homecontainer h3 a {
+	text-decoration: none; /* Removes underline from links */
+	color: white; /* Sets link color to white */
+}
+
+
+/*.navbar .nav li a {
+	text-decoration: none;
+	font-weight: bold;
+	color: white;
+	margin: 15px;
+}
+*/
+
+ul {
+  list-style-type: none; /* Removes default bullet points from lists */
+  margin: 0; /* Resets margin */
+  padding: 0; /* Resets padding */
+  float: left; /* Floats the element to the left */
+  padding-left: 900px; /* Adds left padding of 900px */
+  color: white; /* Sets text color to white */
+}
+
+ul.a {
+  text-decoration: none; /* Removes text decoration from elements with class 'a' inside 'ul' */
+}
+
+li {
+  display: inline; /* Displays list items inline */
+}
+
+.footernav li {
+  display: inline; /* Displays list items inside footer inline */
+  margin-right: 60px; /* Adds right margin of 60px */
+  margin-left: 20px; /* Adds left margin of 20px */
+}
+
+#chineseLabel,
+#chipperLabel,
+#pizzaLabel,
+#japaneseLabel,
+#mexicanLabel {
+  padding-left: 120px; /* Adds left padding of 120px to multiple IDs */
+  color: white; /* Sets text color to white */
+}
+
+#pizzaLabel {
+  margin-left: 11px; /* Adds left margin of 11px specifically to '#pizzaLabel' */
+}
+
+#myButton3 {
+  margin-right: 10px; /* Adds right margin of 10px specifically to '#myButton3' */
+}
+
+footer {
+  margin-top: 50px; /* Adds top margin of 50px to the footer */
+}
+
+
+.footernav {
+  width: 100%; /* Set the width to 100% */
+  background-color: grey; /* Footer background color */
+  text-align: center; /* Center the links horizontally */
+  padding: 10px 0; /* Add padding for better spacing */
+}
+
+.footernav ul {
+  padding: 0; /* Removes padding */
+  margin: 0; /* Removes margin */
+}
+
+.footernav li {
+  display: inline; /* Displays list items inline */
+}
+
+.footernav {
+  display: flex; /* Uses flexbox for layout */
+  justify-content: flex-end; /* Aligns items at the end */
+  width: 100%; /* Sets width to 100% */
+  background-color: grey; /* Background color for .footernav */
+}
+
+.footernav ul {
+  padding: 0;
+  margin: 0;
+  display: flex; /* Use flexbox for list items */
+  align-items: center; /* Center the items vertically */
+}
+
+.footernav li {
+  list-style: none; /* Removes list item bullets */
+}
+
+.footernav li:hover {
+  color: white; /* Text color on hover */
+  background-color: black; /* Background color on hover */
+}
+
+.footernav li + li, {
+  border-left: 1px solid white; /* Adds left border to list items */
+  padding-left: 10px; /* Adds padding to the left of list items */
+}
+
+.footernav li a {
+  text-decoration: none; /* Removes underlines from links */
+  font-weight: bold; /* Makes the text bold */
+  color: white; /* Sets text color to white */
+}
+
+.footernav li:not(:last-child) {
+  margin-right: -10px; /* Adjusts spacing between links */
+}
+
+.homecontainer {
+  display: flex; /* Uses flexbox for layout */
+  flex-wrap: wrap; /* Allows flex items to wrap to the next line */
+  justify-content: center; /* Centers items horizontally */
+  align-items: center; /* Centers items vertically */
+  gap: 20px; /* Space between divs */
+  margin-top: 0px; /* Adjusts top margin */
+  background-color: grey; /* Background color */
+  padding-top: 20px; /* Padding at the top */
+  padding-bottom: 20px; /* Padding at the bottom */
+}
+
+.homechinesefood,
+.homechipperfood,
+.homejapanesefood {
+  width: calc(33.33% - 115.5px); /* Sets width of certain elements */
+  border: 3px solid black; /* Adds a solid black border */
+}
+
+/* Styling for items with classes 'homepizzafood' and 'homemexicanfood' */
+.homepizzafood,
+.homemexicanfood {
+  width: calc(35% - 136.5px); /* Adjusts width while considering padding to reduce space */
+  border: 3px solid black; /* Adds a 3px solid black border */
+}
+
+/* Styling for elements with class 'food-image' inside '.homepizzafood' */
+.homepizzafood .food-image {
+	background-color: grey; /* Sets the background color to grey */
+}
+
+/* Styling for 'label' elements and elements with ID 'wherequestion' */
+label, #wherequestion {
+	color: white; /* Sets text color to white */
+}
+
+/* Styling for the top and footer navigation bars */
+.topnav, .footernav {
+  overflow: hidden; /* Hides content that overflows its box */
+  background-color: grey; /* Sets background color to grey */
+}
+
+/* Styling for links within the navigation bars */
+.topnav a {
+  float: left; /* Floats elements to the left */
+  display: block; /* Sets elements as block-level elements */
+  color: black; /* Sets text color to black */
+  text-align: center; /* Centers text */
+  padding: 14px 16px; /* Sets padding for top and bottom to 14px, and left and right to 16px */
+  text-decoration: none; /* Removes default text decoration */
+  font-size: 17px; /* Sets font size to 17px */
+}
+
+/* Styling for elements with class 'nav-link' within '.topnav' */
+.topnav .nav-link {
+    background-color: black; /* Sets background color to black */
+    color: white; /* Sets text color to white */
+}
+
+/* Change the color of links on hover for anchors with class 'homeNav' in '.topnav' */
+.topnav a.homeNav:hover {
+  background-color: black; /* Changes background color to black on hover */
+  color: white; /* Changes text color to white on hover */
+  margin: auto; /* Centers the margin */
+}
+
+/* Style the active element for anchors with class 'homeNav' in '.topnav' */
+.topnav a.homeNav {
+  background-color: grey; /* Sets background color to grey */
+  color: white; /* Sets text color to white */
+}
+
+/* Style the search box (input type text) inside the navigation bar */
+.topnav input[type=text] {
+  float: right; /* Floats the input to the right */
+  padding: 6px; /* Adds padding around the input */
+  border: none; /* Removes the border */
+  margin-top: 8px; /* Sets top margin */
+  margin-right: 16px; /* Sets right margin */
+  font-size: 17px; /* Sets font size to 17px */
+}
+
+/* Styling for elements with class 'homeNav' */
+.homeNav {
+  border-right: 1px solid white; /* Adds a right border of 1px solid white */
+  padding-right: 10px; /* Adds right padding of 10px */
+}
+
+/* Removes the right border on the last anchor tag with class 'homeNav' */
+.homeNav:last-child {
+  border-right: none; /* Removes the right border */
+}
+
+
+/* When the screen is less than 600px wide, stack the links and the search field vertically instead of horizontally */
+/* Media query for screens up to a maximum width of 600 pixels */
+@media screen and (max-width: 600px) {
+  /* Adjustments for anchors and text input elements within '.topnav' at smaller screen sizes */
+  .topnav a, .topnav input[type=text] {
+    float: none; /* Removes the float */
+    display: block; /* Changes the display to block */
+    text-align: left; /* Aligns text to the left */
+    width: 100%; /* Sets the width to 100% */
+    margin: 0; /* Resets margin */
+    padding: 14px; /* Adjusts padding */
+  }
+  
+  /* Additional styling specifically for input elements of type 'text' within '.topnav' */
+  .topnav input[type=text] {
+    border: 1px solid #ccc; /* Sets a border with a color */
+  }
+}
+
+.socialsContainer{
+	display: flex; /* Uses flexbox for layout */
+	color: white; /* Sets text color to white */
+	gap: 20px; /* Sets gap between flex items */
+	padding-left: 550px; /* Adds left padding */
+	background-color: grey; /* Sets background color to grey */
+	margin-top: 5px; /* Sets top margin */
+} 
+
+#socials{
+	color: white; /* Sets text color to white */
+	font-size: 20px; /* Sets font size to 20px */
+	padding-left: 500px; /* Adds left padding */
+	background-color: grey; /* Sets background color to grey */
+}
+
+footer{
+	background-color: grey; /* Sets background color to grey */
+	padding-bottom: 10px; /* Adds bottom padding */
+	padding-top: 1px; /* Adds top padding */
+	margin-top: 100px; /* Sets top margin */
+}
+
+.footer-content {
+    display: flex; /* Uses flexbox for layout */
+    flex-direction: column; /* Sets flex direction to column */
+    align-items: center; /* Centers items horizontally */
+    justify-content: center; /* Centers items vertically */
+}
+
+.rights {
+    text-align: center; /* Aligns text in the center */
+    margin-top: 20px; /* Sets top margin */
+}
+
+#myButton, #myButton2, #myButton3, #myButton4, #myButton5 {
+	margin-left: 130px; /* Adds left margin of 130px to multiple buttons */
+}
+
+#myButtonDetails, #myButton2Details, #myButton3Details, #myButton4Details, #myButton5Details {
+  color: white; /* Sets text color to white for details of buttons */
+  text-align: center; /* Centers text horizontally */
+  font-size: 14px; /* Sets font size to 14px for details of buttons */
+}
+
+.homechinesefood #myButtonDetails,
+.homechipperfood #myButton2Details,
+.homejapanesefood #myButton3Details,
+.homepizzafood #myButton4Details,
+.homemexicanfood #myButton5Details {
+  display: block; /* Displays the details block */
+  justify-content: center; /* Centers content horizontally */
+  align-items: center; /* Centers items vertically */
+} 
+
+/* Styles for the popup */
+
+.tos {
+  display: none; /* Hides the popup */
+  position: fixed; /* Fixes the position of the popup */
+  top: 0; /* Positions the popup at the top */
+  justify-content: center; /* Centers content horizontally */
+  align-items: center; /* Centers items vertically */
+  width: 60%; /* Sets the width of the popup to 60% */
+  height: 50%; /* Sets the height of the popup to 50% */
+  margin-left: 230px; /* Adds left margin of 230px to the popup */
+  margin-top: 40px; /* Adds top margin of 40px to the popup */
+}
+
+.tos-content {
+  background: white; /* Sets the background color of the popup content to white */
+  padding: 20px; /* Adds padding to the popup content */
+  border-radius: 5px; /* Rounds the corners of the popup content */
+  text-align: center; /* Aligns text in the center of the popup content */
+  color: black; /* Sets text color to black for the popup content */
+}
+
+/*
+*author@Dean.Dolan
+*form.html + moredetails.json + index.js ALL DONE BY DEAN DOLAN
+*29/11/2023
+*/
+
+/* form.html styling ALL DONE BY DEAN DOLAN */
+
+/* Styles for the '.formcontainer' class */
+.formcontainer {
+  width: 20%; /* Adjusts the width of the container */
+  margin: 0 auto; /* Centers the container horizontally */
+  padding: 20px; /* Adds padding inside the container */
+  background-color: grey; /* Sets the background color to grey */
+}
+
+/* Styles for the '#signUpParagraph' ID */
+#signUpParagraph {
+  font-size: 32px; /* Sets font size to 32px */
+  color: white; /* Sets text color to white */
+  padding-left: 525px; /* Adjusts left padding */
+  margin: 5px; /* Sets margin */
+  font-weight: bold; /* Makes text bold */
+}
+
+#formMessage{
+	color: white; /* Sets text color to white */
+}
+
+/* help.html styling ALL DONE BY DEAN DOLAN */
+
+/* Styles for the '#helpParagraph' ID */
+#helpParagraph {
+  font-size: 32px; /* Sets font size to 32px */
+  color: white; /* Sets text color to white */
+  padding-left: 445px; /* Adjusts left padding */
+  margin: 5px; /* Sets margin */
+  font-weight: bold; /* Makes text bold */
+}
+
+.faq{
+	color: white;
+	background-color: grey;
+	text-align: center;
+	width: 50%;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin-top: 30px;
+	margin-left: 327px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+#question1:hover {
+    color: yellow; /* Change to the desired color */
+	font-weight: bold;
+}
+
+#question2:hover {
+    color: yellow; /* Change to the desired color */
+	font-weight: bold;
+}
+
+#question3:hover {
+    color: yellow; /* Change to the desired color */
+	font-weight: bold;
+}
+
+#question4:hover {
+    color: yellow; /* Change to the desired color */
+	font-weight: bold;
+}
+
+#question5:hover {
+    color: yellow; /* Change to the desired color */
+	font-weight: bold;
+}
+
+
+
+
+/*
+*author@Conor.Griffin
+*chinese.html, Food.json,  ALL DONE BY Conor Griffin
+*14/12/2023
+*/
+
+
+
+/* Add a background color to the top navigation bar */
+.CGtopnav {
+  overflow: hidden;
+  background-color:grey;
+}
+
+/* Style the links inside the navigation bar */
+.CGtopnav a {
+  float: left;
+  display: block;
+  color: BLACK;
+  background-color: #C9B608;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Style the "active" element to highlight the current page */
+.CGtopnav a.active {
+  background-color: BLUE;
+  color: BLACK;
+}
+
+/* Style the search box inside the navigation bar */
+.CGtopnav input[type=text] {
+  float: right;
+  padding: 6px;
+  border: none;
+  margin-top: 8px;
+  margin-right: 16px;
+  font-size: 17px;
+}
+
+/* When the screen is less than 600px wide, stack the links and the search field vertically instead of horizontally */
+@media screen and (max-width: 600px) {
+  .CGtopnav a, .CGtopnav input[type=text] {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  .CGtopnav input[type=text] {
+    border: 1px solid GREY;
+  }
+}
+
+.CGheading{
+  color:whitesmoke;
+  align-self: center;
+  padding-left: 550px;
+}
+
+#h3{
+	padding-left: 120px;
+}
+
+.CGbody{
+background-image: url("./images/CGbg-min.jpg");
+background-position:fixed;
+
+background-repeat:repeat;
+}
+/* Add your existing styles here */
+
+/* Style for the menu container */
+
+#output {
+  border: 2px solid #C9B608;  /* Add this line to set the border */
+  background-color: grey;
+  padding: 10px;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+
+/* Style for the restaurant type heading */
+#output h2 {
+  color: #333;
+}
+
+/* Style for menu categories */
+#output h3 {
+  color: #555;
+}
+
+/* Style for menu items */
+#output p {
+  margin: 5px 0;
+  color: #C9B608;
+}
+/* Style for menu items */
+#output .menu-item {
+  display: flex;
+  align-items: center;
+}
+
+#output .menu-item img {
+  width: 50px; /* Adjust the size as needed */
+  margin-right: 10px; /* Adjust the spacing as needed */
+}
+
+.menuBTN{
+margin-left: 570px;
+margin-top: 20px;
+
+}

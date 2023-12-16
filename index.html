@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<!-- OUR GROUP ID IS 163, MEMBERS ARE DEAN DOLAN, CONOR GRIFFIN, CODY AREMU AND OUEDRAOGO MORRIS -->
+
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this template
+-->
+
+<!-- This page was done entirely by Dean Dolan along with the navbar and footer used across all pages -->
+<!--
+*author@Dean.Dolan
+*index.html + index.js + more-details.json
+*29/11/2023
+-->
+
+<!-- All images done by me (Dean Dolan) have been optimized using Omtimizilla -->
+<html>
+    <head>
+        <title>MunchMob Landing Page</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="styles.css">
+        
+    </head>
+    <body div class="homeBody">
+        <header>
+			<img id="logo" src="./images/new-logo-min.png" alt="logo" height="150px" width="200px"> <!-- Logo designed by taking an image, adding some text and removing the background with Photo Room -->
+			<div class="topnav">
+				<a class="homeNav" href="index.html">Home</a> <!-- Link to index.html -->
+				<a class="homeNav" href="form.html">Become a courier</a>
+                <a class="homeNav" href="help.html">Help</a>
+				<input type="text" id="myInput" onkeyup="filterList()" placeholder="Search...">	
+				<ul id="myList">
+					<li><a href="chinese.html">Chinese</a></li>
+					<li><a href="chipper.html">Chipper</a></li>
+					<li><a href="japanese.html">Japanese</a></li>
+					<li><a href="pizza.html">Pizza</a></li>
+					<li><a href="mexican.html">Mexican</a></li>
+				</ul>
+			</div><!-- Navbar with anchor tags and styled to change colors if hovered over -->
+			<br>
+		</header>
+
+		
+		<main>		
+			<h2 id="homeOptions">CHOOSE FROM OUR OPTIONS BELOW:</h2>
+			<br> <!-- Each div within the homecontainer displays an image with the respective restaurant type (name) which has a button that when clicked on will retrieve information about that restaurant from the more-details.json file using JavaScript from the index.js file -->
+			<div class="homecontainer">
+				<div class="homechinesefood">
+					<a href="chinese.html"><img src="./images/chinesefood-min.jpg" alt="home1" height="100px" width="300px"></a>
+					<h3 id="chineseLabel"><a href="chinese.html">Chinese</a></h3>     
+					<p id="indexchinese"></p>
+					<button onclick="displayChineseData()" id="myButton">More</button>
+					<p id="myButtonDetails"></p>
+				</div>
+				
+				<div class="homechipperfood">
+					<a href="chipper.html"><img src="./images/chipperfood-min.jpg" alt="home2" height="100px" width="300px"></a>
+					<h3 id="chipperLabel"><a href="chipper.html">Chipper</a></h3>
+					<p id="indexchipper"></p>
+					<button onclick="displayChipperData()" id="myButton2">More</button>
+					<p id="myButton2Details"></p>
+				</div>
+				
+				<div class="homejapanesefood">
+					<a href="japanese.html"><img src="./images/japanesefood-min.jpg" alt="home3" height="100px" width="300px"></a>
+					<h3 id="japaneseLabel"><a href="japanese.html">Japanese</a></h3>
+					<p id="indexjapanese"></p>
+					<<button onclick="displayJapaneseData()" id="myButton3">More</button>
+					<p id="myButton3Details"></p>
+				</div>
+				
+				<div class="homepizzafood">
+					<a href="pizza.html"><img src="./images/pizzafood-min.jpg" alt="home4" height="100px" width="300px"></a>
+					<h3 id="pizzaLabel"><a href="pizza.html">Pizza</a></h3>
+					<p id="indexpizza"></p>
+					<button onclick="displayPizzaData()" id="myButton4">More</button>
+					<p id="myButton4Details"></p>
+				</div>
+				
+				<div class="homemexicanfood">
+					<a href="mexican.html"><img src="./images/mexicanfood-min.jpg" alt="home5" height="100px" width="300px"></a>
+					<h3 id="mexicanLabel"><a href="mexican.html">Mexican</a></h3>
+					<p id="indexmexican"></p>
+					<button onclick="displayMexicanData()" id="myButton5">More</button>
+					<p id="myButton5Details"></p>
+				</div>
+			</div>
+			
+			<!-- Terms of service popup once the window is loaded and will not dissappear unless the button "I agree" is clicked, adding some realism to the website -->
+			<div class="tos" id="tos">
+				<div class="tos-content">
+					<h2 id="tosLabel"><strong>Terms of Service</strong></h2> <!-- Basic TOS info edited to fit the type of application -->
+					<h4 id="tos-heading1"><strong>1. Acceptance of Terms</strong></h4>
+					<p id="tos1"> 
+					By using MunchMob delivery app, you agree to comply with these Terms of Service. If you do not agree with any part of these terms, please refrain from using our services.
+					</p>
+					<h4 id="tos-heading1"><strong>2. Use of Our Services</strong></h4>
+					<p id="tos2">
+					You agree to provide accurate and complete information when creating an account. You are responsible for maintaining the confidentiality of your account credentials and for all activities under your account.
+					</p>
+					<h4 id="tos-heading3"><strong>3. Service Description</strong></h4>
+					<p id="tos3">
+					MunchMob delivery app provides a platform that connects users with restaurants and facilitates the ordering and delivery of food items. We do not own, prepare, or deliver the food ourselves but act as an intermediary between users and restaurants.
+					</p>
+					<button onclick="acceptTerms()">I agree</button>
+				</div>
+			</div>
+			
+			<script src="index.js"></script> <!-- Link to the Javascript file -->
+			
+		</main>
+		
+		<footer> <!-- Adding some social media icons with some corporate text to once again add some realism to the website -->
+			<p id="socials">Follow us @MunchMob</p>
+			
+			<div class="socialsContainer">
+				<img src="./images/facebook-icon.png" alt="socials1" height="20px" width="20px">
+				<img src="./images/instagram-icon.png" alt="socials2" height="20px" width="20px">
+				<img src="./images/twitter-icon.png" alt="socials3" height="20px" width="20px">
+			</div>
+			
+			<div class="rights">
+			<p>Visit our corporate website at www.munchmobplc.com</p>
+			<p>Copyright © 2023 MunchMob. All rights reserved.</p>
+			</div>
+		</footer>
+    </body>
+</html>

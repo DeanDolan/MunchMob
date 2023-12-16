@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Fish and Chips</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="castyle2.css">
+    <script>
+        // Function to be called when the "Menu" button is clicked
+        function LoadChipper() {
+            // Step 1: Fetch the JSON file
+            fetch('Food.json')
+                .then(response => response.json()) // Step 2: Parse JSON data
+                .then(data => {
+                    // Step 3: Retrieve and display information for Chipper
+                    const chipper = data.chipper;
+                    displayInfo(chipper);
+                })
+                .catch(error => console.error('Error fetching JSON:', error));
+        }
+    
+        function displayInfo(chipper) {
+            const outputElement = document.getElementById('output');
+    
+            // Clear previous content
+            outputElement.innerHTML = '';
+    
+            // Display restaurant type
+            outputElement.innerHTML += `<h2>Chipper Location</h2>`;
+    
+            // Display details
+            outputElement.innerHTML += `<p>Distance: ${chipper.details.distance} from your location</p>`;
+            outputElement.innerHTML += `<p>Location: ${chipper.details.location}</p>`;
+            outputElement.innerHTML += `<p>Delivery Cost: €${chipper.details.delivery}0</p>`;
+    
+            // Display menu
+            outputElement.innerHTML += '<h3>Menu</h3>';
+            if (chipper.menu) {
+                for (const item of chipper.menu) {
+                    outputElement.innerHTML += `<div class="menu-item">
+                        <img src="./images/${item[0].toLowerCase()}.png" alt="${item[0]}">
+                        <p>${item[0]}: €${item[1]}</p>
+                    </div>`;
+                }
+            }
+    
+            // Show the menu container
+            outputElement.style.display = 'block';
+        }
+    </script>
+</head>
+<body>
+	<h1 class="heading">Chipper</h1>
+	<header>
+			<div class="topnav">
+				<a class="homeNav" href="index.html">Home</a> <!-- Link to index.html -->
+				<a class="homeNav" href="form.html">Become a courier</a>
+                <a class="homeNav" href="help.html">Help</a>
+				<input type="text" id="myInput" onkeyup="filterList()" placeholder="Search...">	
+				<ul id="myList">
+					<li><a href="chinese.html">Chinese</a></li>
+					<li><a href="chipper.html">Chipper</a></li>
+					<li><a href="japanese.html">Japanese</a></li>
+					<li><a href="pizza.html">Pizza</a></li>
+					<li><a href="mexican.html">Mexican</a></li>
+				</ul>
+			</div><!-- Navbar with anchor tags and styled to change colors if hovered over -->
+			<br>
+	</header>
+    <main>
+        <button onclick="LoadChipper()">Menu</button>
+        <div id="output" style="display: none;"></div>
+    </main>
+	<footer> <!-- Adding some social media icons with some corporate text to once again add some realism to the website -->
+			<p id="socials">Follow us @MunchMob</p>
+			
+			<div class="socialsContainer">
+				<img src="./images/facebook-icon.png" alt="socials1" height="20px" width="20px">
+				<img src="./images/instagram-icon.png" alt="socials2" height="20px" width="20px">
+				<img src="./images/twitter-icon.png" alt="socials3" height="20px" width="20px">
+			</div>
+			
+			<div class="rights">
+			<p>Visit our corporate website at www.munchmobplc.com</p>
+			<p>Copyright © 2023 MunchMob. All rights reserved.</p>
+			</div>
+	</footer>
+</body>
+</html>
